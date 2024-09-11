@@ -18,7 +18,14 @@ public class OddEvenHelperTest {
     }
 
     @Test
+    void negNumbers() {
+        assertEquals(false, OddEvenHelper.isEven(-15));
+        assertEquals(true, OddEvenHelper.isOdd(-15));
+    }
+
+    @Test
     void zero() {
         assertEquals(true, OddEvenHelper.isEven(0));
+        assertEquals(false, OddEvenHelper.isOdd(0));
     }
 }
